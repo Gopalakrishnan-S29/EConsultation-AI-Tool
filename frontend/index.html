@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENT</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <!-- CDN Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.2/wordcloud2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Popup Message -->
+  <div id="popupMessage">Analyzing content...</div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>SEND Inovation </h1>
+    <span>Submit your comments & view AI-driven insights</span>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    Empowering citizens with AI insights
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h2>Submit Your Comments</h2>
+
+    <!-- File Upload -->
+    <div class="form-section">
+      <label for="csvFile"><strong>Upload CSV File:</strong></label>
+      <input type="file" id="csvFile" accept=".csv">
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-section">
+      <label for="textInput"><strong>Or Paste Your Comments Below:</strong></label>
+      <textarea id="textInput" rows="6" placeholder="Paste comments here..."></textarea>
+    </div>
+
+    <!-- Buttons -->
+    <div class="form-section">
+      <button id="analyzeBtn">Analyze Comments</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <!-- Results Section -->
+    <h2>AI-Generated Insights</h2>
+    <div class="results">
+      <!-- Sentiment & Summary will appear here -->
+
+      <!-- Word Cloud -->
+      <div class="section">
+        <h3>Word Cloud</h3>
+        <div id="wordCloud" class="wordcloud">Generating...</div>
+      </div>
+
+      <!-- Sentiment Chart -->
+      <div class="section">
+        <h3>Sentiment Chart</h3>
+        <canvas id="sentimentChart"></canvas>
+      </div>
+
+      
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 E-Consultation AI Tool | Powered by Open Data & AI
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

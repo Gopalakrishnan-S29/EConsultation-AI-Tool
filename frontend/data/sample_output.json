@@ -1,0 +1,11 @@
+{
+  "sentiment": [60, 25, 15],
+  "summary": "Most comments are positive and supportive. Some feedback suggests adding clarity.",
+  "wordcloud": [
+    {"text": "policy", "size": 20},
+    {"text": "students", "size": 18},
+    {"text": "details", "size": 15},
+    {"text": "support", "size": 14},
+    {"text": "drawbacks", "size": 12}
+  ]
+}
